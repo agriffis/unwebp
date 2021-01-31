@@ -4,25 +4,24 @@ unwebp
 Convert webp files to jpg or png, automatically depending on whether the
 original is lossless, lossy, or has an alpha channel.
 
-install
+Install
 -------
 
-Dependencies on Mac:
+Download unwebp from the releases page, or clone and run `make` to build it.
+
+On Mac you'll need the latest bash. Install from homebrew:
 
 ```
 brew install bash webp imagemagick
 ```
 
-Dependencies on Linux:
+On Fedora you'll need:
 
 ```
 dnf install libwebp-tools ImageMagick
 ```
 
-The script iself isn't packaged, just download the latest from the releases
-page.
-
-usage
+Usage
 -----
 
 ```
@@ -34,5 +33,3 @@ usage: unwebp [options] files...
      --png        Lossless output (override autodetection)
   -r --recursive  Operate on directories recursively
 ```
-
-
